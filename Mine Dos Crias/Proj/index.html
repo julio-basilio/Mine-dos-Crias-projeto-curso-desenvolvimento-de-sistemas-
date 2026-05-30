@@ -2,12 +2,13 @@
 <html lang="pt-br">
 
 <head>
+  <link rel="icon" href="Img/Logo-site-Mine-dos-Crias.ico" type="image/png"> <!-- Ícone do site -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>O Mine dos Crias</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-  <link rel="stylesheet" href="Css/StyleIndex.css">
+  <link rel="stylesheet" href="Css/styleIndex.css">
 </head>
 
 <body>
@@ -16,138 +17,156 @@
     crossorigin="anonymous"></script>
 
 
+    <!-- Cabeçalho da página com Logo e Título -->
+    <header>
+      <img class="LOGO" src="Img/Logo site Mine dos Crias.png" alt="Logo">
+      <h1 class="titulo">O Mine dos Crias</h1>
+    </header>
 
+
+<!-- Container principal que organiza o Grid Layout do site -->
   <div id="container">
 
+    <!-- Início da Barra de Navegação -->
     <nav class="navbar navbar-expand-lg bg-dark">
       <div class="container-fluid">
-        <a class="navbar-brand" href="Index.html">Início</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <!-- Logo/Texto principal da Nav -->
+        <a class="navbar-brand" href="index.html">Início</a>
+        
+        <!-- Botão hambúrguer que aparece em telas pequenas (mobile) -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
+
+        <!-- Conteúdo do Menu (links e dropdowns) -->
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="navbar-nav">
 
+            <!-- Dropdown: Lista de Jogos -->
             <li class="nav-item3 dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Jogos
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false"> Jogos
               </a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">CS:GO</a></li>
-                <li><a class="dropdown-item" href="#">Half-Life</a></li>
-                <li><a class="dropdown-item" href="#">Stardew Valley</a></li>
-                <li><a class="dropdown-item" href="#">Minecraft</a></li>
-                <li><a class="dropdown-item" href="#">A Jornada do Herói</a></li>
+                <li><a class="dropdown-item" href="csgo.html">CS:GO</a></li>
+                <li><a class="dropdown-item" href="Half-Life.html">Half-Life</a></li>
+                <li><a class="dropdown-item" href="Halo.html">Halo</a></li>
+                <li><a class="dropdown-item" href="stardew valley.html">Stardew Valley</a></li>
+                <li><a class="dropdown-item" href="minecraft.html">Minecraft</a></li>
+                <li><a class="dropdown-item" href="Alem-das-cinzas.html">A Jornada do Herói</a></li>
               </ul>
             </li>
 
+            <!-- Dropdown: Sobre a Equipe -->
             <li class="nav-item2 dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Sobre nós
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false"> Sobre nós
               </a>
               <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="https://www.instagram.com/in.basilio/" target="_blank">Julio Basílio</a></li>
-                <li><a class="dropdown-item" href="#">Pedro Henrique</a></li>
-                <li><a class="dropdown-item" href="#">Lucas Almeida</a></li>
+                <li><a class="dropdown-item" href="https://www.instagram.com/pedrohenriquedemoura.santos/" target="_blank">Pedro Henrique</a></li>
+                <li><a class="dropdown-item" href="https://www.instagram.com/_lc_a._.m/" target="_blank">Lucas Almeida</a></li>
                 <li><a class="dropdown-item" href="https://www.instagram.com/rafamuss/" target="_blank">Rafael Mussuhauser</a></li>
               </ul>
             </li>
 
-            
-
+            <!-- Link simples para Cards -->
             <li class="nav-item1">
-              <a class="nav-link" href="#">Cards</a>
+              <a class="nav-link" href="cards.html">Cards</a>
             </li>
 
+            <!-- Link para a página de formulário -->
             <li class="nav-item1">
-              <a class="nav-link" href="#">Deixe sua Opinião</a>
+              <a class="nav-link" href="formulario Apoio.html">Deixe sua Opinião</a>
             </li>
           </ul>
-
         </div>
       </div>
     </nav>
 
-    <header>
-      <img class="LOGO" src="./img/Logo site Mine dos Crias.png" alt="Logo">
-      <h1 class="titulo">O Mine dos Crias</h1>
-    </header>
-
+    
+    <!-- Conteúdo principal (textos de apresentação) -->
     <main>
       <h2>O Mine dos Crias</h2>
       <p class="p1">É um site que nasceu de uma idéia entre amigos de criar um espaço voltado para os games.
-         Aqui, transformamos nosso projeto escolar em um espaço para você explorar novos desafios e ampliar seu conhecimento sobre os melhores jogos!</p>
+        Aqui, transformamos nosso projeto escolar em um espaço para você explorar novos desafios e ampliar seu
+        conhecimento sobre os melhores jogos!</p>
       <p class="p2"> Aqui, você encontrará <br>
         Informações sobre jogos famosos <br><br>
-        E poderá contribuir, <br> Para um jogo que está sendo feito por um colega de nossa equipe.</p>
-      <p class="p3">Bem-vindos ao nosso portal de jogos! <br>
-        Este site é o resultado de um projeto escolar dedicado ao desenvolvimento web e ao entretenimento digital. </p>
+        E poderá contribuir, <br> Para um jogo que está sendo feito por um colega de nossa equipe <br><br>
+      "A jornada do Herói - Além das cinzas"<br></p>
+      <div class="p3">Bem-vindos ao nosso portal de jogos! <br>
+        Este site é o resultado de um projeto escolar dedicado ao desenvolvimento web e ao entretenimento digital. </div>
     </main>
 
-
-
+    <!-- Barra Lateral (Aside) -->
     <aside id="aside">
+      <!-- Seção superior do aside: Lista Ordenada de Jogos -->
       <div class="aside-up">
         <h4>Jogos mais populares (2026)</h4>
         <ol class="ordem-list">
-          <li class="list-item"><a class="link-list" href="link1">Minecraft</a></li>
-          <li class="list-item"><a class="link-list" href="link2">CS:GO</a></li>
-          <li class="list-item"><a class="link-list" href="link3">Stardew Valley</a></li>
-          <li class="list-item"><a class="link-list" href="link3">Half-Life</a></li>
-          <li class="list-item"><a class="link-list" href="link3">A Jornada do Herói</a></li>
+          <li class="list-item"><a class="link-list" href="minecraft.html">Minecraft</a></li>
+          <li class="list-item"><a class="link-list" href="csgo.html">CS:GO</a></li>
+          <li class="list-item"><a class="link-list" href="stardew valley.html">Stardew Valley</a></li>
+          <li class="list-item"><a class="link-list" href="Halo.html">Halo</a></li>
+          <li class="list-item"><a class="link-list" href="Half-Life.html">Half-Life</a></li>
+          <li class="list-item"><a class="link-list" href="Além das cinzas.html">A Jornada do Herói</a></li>
         </ol>
       </div>
 
-
+      <!-- Seção inferior do aside: Tabela de Funções da Equipe -->
       <div class="aside-down">
         <table>
-        <thead>
-   <tr>
-     <th scope="col"> Nome</th>
-     <th scope="col"> Função</th>
-   </tr>
- </thead>
- <tbody>
-   <tr>
-     <th scope="row"> Júlio B.</th>
-     <td>Páginas de jogos</td>
-   </tr>
-   <tr>
-     <th scope="row">Pedro H.</td></th>
-     <td>Cards</td>
-   </tr>
-   <tr>
-     <th scope="row">Lucas A.</td></th>
-     <td>Index, Formulário</td>
-   </tr>
-   <tr>
-     <th scope="row">Rafael M.</td></th>
-     <td>Pesquisas</td>
-   </tr>
- </tbody>
-</table>
+          <thead>
+            <tr>
+              <th> Nome </th>
+              <th> Função </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td> Julio B.</td>
+              <td> Páginas de jogos </td>
+            </tr>
+            <tr>
+              <td> Pedro H. </td>
+              <td> Cards </td>
+            </tr>
+            <tr>
+              <td> Lucas A. </td>
+              <td> Index, Formulário </td>
+            </tr>
+            <tr>
+              <td> Rafael M. </td>
+              <td> Pesquisas </td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </aside>
 
-
-
+    <!-- Rodapé da Página -->
     <footer>
-  
-  <div class="footer-redes">
-    <h4>Siga-nos:</h4>
-    <a href="https://www.instagram.com/shadowdetchola_eteclg_ofc/" target="_blank"><img class="footer-img1" src="img/instagram.png" alt="Instagram"></a>
-    <a href="https://youtube.com/@entreamigos9940?si=zOW7Rw2leY9WY2CM" target="_blank"><img class="footer-img2" src="img/Youtube.png" alt="Youtube"></a>
-  </div>
+      <!-- Links para Redes Sociais com imagens -->
+      <div class="footer-redes">
+        <h4>Siga-nos:</h4>
+        <a href="https://www.instagram.com/shadowdetchola_eteclg_ofc/" target="_blank">
+          <img class="footer-img1" src="Img/instagram.png" alt="Instagram">
+            </a>
 
-  <div class="copyright">
-    <p>&copy; 2026. O Mine dos Crias. Todos os direitos reservados.</p>
-  </div>
-</footer>
+        <a href="https://youtube.com/@entreamigos9940?si=zOW7Rw2leY9WY2CM" target="_blank">
+            <img class="footer-img2" src="Img/Youtube.png" alt="Youtube">
+        </a>
+      </div>
 
+      <!-- Texto de Direitos Autorais -->
+      <div class="copyright">
+        <p>&copy; 2026. O Mine dos Crias. Todos os direitos reservados.</p>
+      </div>
+    </footer>
 
-
-
-
-
-  </div>
+  </div> <!-- Fim do #container -->
 </body>
 
 </html>
