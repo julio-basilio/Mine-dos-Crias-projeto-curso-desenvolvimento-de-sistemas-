@@ -1,0 +1,227 @@
+body{
+
+     background-image: url(../img/backg-formulario.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+   
+    
+}
+    #container{
+    display: grid;
+    font-family: 'Times New Roman', Times, serif;
+    grid-template-columns: 1fr 6fr 1fr;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas: "header header header"
+                         "nav    nav    nav"
+                         "main   main   main"
+                         "footer footer footer";
+
+
+
+    
+}
+
+/* Cabeçalho (Header) */
+header {
+    grid-area: header;
+    display: grid;
+    grid-template-columns: 2fr 7fr;
+    grid-template-rows: auto;
+    grid-template-areas: "logo titulo";
+
+    background-color: rgba(9, 1, 38, 0.352);
+    height: 190px;
+    border-radius: 5px;
+    border: 3px solid rgba(16, 8, 42, 0.488);
+    font-size: 30px;
+    text-align: center;
+    padding: 2%;
+}
+/* Logo dentro do Header */
+.LOGO {
+    height: 100px;
+    grid-area: logo;
+}
+
+/* Título Principal */
+.titulo {
+    color: aliceblue;
+    grid-area: titulo;
+    font-size: 40px;
+    text-align: justify;
+    letter-spacing: 1px;
+}
+
+
+
+
+nav{
+    grid-area: nav;
+    font-size: 20px;
+    padding: 5px;
+}
+.navbar-brand{
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    padding-left: 3%;
+    letter-spacing: 1px;
+    font-size: 25px;
+}
+#navbarNavDropdown{ 
+    padding-left: 2%;
+    color: aliceblue;
+}
+.navbar-nav{
+    color: aliceblue;
+}
+.dropdown-menu{
+    padding: 3%;
+}
+.nav-link{
+    position: relative;
+    padding-left: 30px;
+    color: aliceblue;
+}
+.nav-item1{
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.nav-item2{
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.nav-item3{
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+
+main{
+    grid-area: main;
+    color: aliceblue;
+
+    display: grid;
+    grid-template-columns: 4fr 2fr;
+    grid-template-rows: auto auto;
+    grid-template-areas: "jogo-r formulario"
+                         "jogo-r formulario";
+
+    background-color: rgba(9, 1, 38, 0.511);
+}
+#jogo-r{
+    grid-area: jogo-r;
+    padding: 20px;
+
+}
+#formulario{
+    grid-area: formulario;
+    border: 2px solid;
+    border-color: rgba(172, 166, 196, 0.704);
+    padding: 10px;
+
+}
+h2{
+    font-style: italic;
+    text-align: center;
+    padding: 20px;
+    letter-spacing: 1px;
+
+}
+.p1,.p2,.p3{
+    font-style: italic;
+    text-align: justify;
+    padding: 20px;
+    letter-spacing: 1px;
+}
+.p4{
+    text-align: center;
+    font-style: italic;
+    padding: 60px;
+    font-size: 40px;
+    letter-spacing: 2px;
+}
+.label{
+    font-size: 20px;
+}
+
+
+
+footer{
+    grid-area: footer;
+    background-color: rgba(18, 9, 50, 0.704);
+    height: 180px;
+    padding: 30px;
+    color: aliceblue;
+}
+.copyright{
+    text-align: center;
+    font-size: 20px;
+    padding-top: 20px;
+    color: aliceblue;
+
+}
+.footer-redes{
+    text-align: center;
+    font-size: 20px;
+    color: aliceblue;
+}
+.link-footer1{
+    padding-right: 2%;
+    padding-top: 3%;
+    text-align: center;
+    color: aliceblue;
+    
+}
+.link-footer2{
+    padding-left: 1%;
+    padding-top: 1%;
+    text-align: center;
+    color: aliceblue;
+}
+.footer-img1{
+    height: 50px;
+
+}
+.footer-img2{
+    height: 40px;
+    padding-left: 2%;
+}
+
+ @media (max-width: 700px) {
+
+    body{
+        background-image: url(../img/backg-formulario.png);
+        background-repeat: no-repeat;
+        background-position-x: -2000px;
+    }
+    #container {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+            "header"
+            "nav"
+            "main" 
+            "footer";
+
+    }
+        main {
+        display: block; 
+        width: 100%;
+    }
+
+    /* Ajuste do Header para telas pequenas */
+    header {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+    }
+
+    .titulo {
+        text-align: center;
+        font-size: 28px;
+    }
+    footer{
+        height: 250px;
+    }
+}

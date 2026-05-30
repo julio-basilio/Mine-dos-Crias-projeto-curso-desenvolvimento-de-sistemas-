@@ -1,8 +1,48 @@
+/* 
+Autor: Pedro Henrique
+Projeto: Mine dos Crias
+Descrição: Folha de estilos responsável pelo layout e aparência do site.
+Tecnologias: HTML5, CSS3 (Grid Layout, Responsividade)
+Data: 2026
+*/
+
+/* AVISOS DE ESTILO: 
+Qualquer alteração deve ser feita com cuidado para manter a consistência visual 
+e a responsividade do site.
+O site foi projetado para ser visualmente agradável e funcional
+em diferentes dispositivos, utilizando de medidas específicas
+para garantir uma boa experiência de usuário.
+Alterações devem ser documentadas 
+e testadas em diferentes resoluções para garantir a compatibilidade. 
+ASSINADO: Pedro Henrique, Desenvolvedor Web e Designer do Mine dos Crias. 
+*/
+
+/* Importação de fontes externas para melhorar o visual do site */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+
+
+/* Fonte padrão para leitura confortável em textos longos */
+.inter-normal {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Fonte estilizada para títulos e elementos de destaque */
+.orbitron {
+  font-family: "Orbitron", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400; 
+  font-style: normal;
+}
+
 body{
   background-color: #121117;
   margin: 0;
   color: #EAEAEA;
   font-family: Arial, sans-serif;
+
 }
 
 .container{
@@ -22,6 +62,7 @@ header, nav, main, footer{
   padding: 15px;
   text-align: center;
   box-shadow: 0 0 10px #7B2CBF, 0 0 20px #7B2CBF;
+  text-decoration: none;
 }
 
 header{
@@ -45,6 +86,26 @@ footer{
   background-color: #7B2CBF;
 }
 
+#logo {
+    position: relative;
+    top: 10%;
+    right: 37%;
+    width: 100px; 
+    
+}
+
+a{
+  text-decoration: none;
+}
+
+#Nome_Site{
+  position: relative;
+  top: -61px;
+  color: #EAEAEA;;
+  font-size: 61px;
+  font-family: Orbitron, sans-serif;
+}
+
 .cards-container{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -61,6 +122,7 @@ footer{
   color: #EAEAEA;
   transition: 0.3s;
   box-shadow: 0 0 10px #7B2CBF, 0 0 20px #7B2CBF;
+  padding: 5%;
 }
 
 .card:hover{
@@ -89,10 +151,44 @@ footer{
   .cards-container{
     grid-template-columns: repeat(2, 1fr);
   }
+
+  #Nome_Site{
+  position: relative;
+  top: 9%;
+  color: #EAEAEA;;
+  font-size: 37px;
+  font-family: Orbitron, sans-serif;
+
+  }
+
+  
+#logo {
+    position: center;
+    top: -2%;
+    right: 1%;
+    width: 70px; 
+}
 }
 
 @media (max-width: 768px){
   .cards-container{
     grid-template-columns: 1fr;
   }
+  
+    #Nome_Site{
+  position: relative;
+  top: 9%;
+  color: #EAEAEA;;
+  font-size: 37px;
+  font-family: Orbitron, sans-serif;
+
+  }
+
+  
+#logo {
+    position: center;
+    top: -2%;
+    right: 1%;
+    width: 70px; 
+}
 }
